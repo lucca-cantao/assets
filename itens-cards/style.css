@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.card{
+    background-color: #b8e0d2;
+    border: solid;
+    border-radius: 25px;
+    height: 25rem;
+    width: 18.75rem;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px gray;
+    /*transform: scale(0.7);*/
+}
+.images{
+    border-radius: 25px;
+}
+.btn{
+    background-color: #eac4d5;
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.1s;
+    border:none;
+    box-shadow: 0 0 10px gray;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size:15px ;
+}
+.btn:hover
+{
+    transform: scale(1.05);
+
+}
+.btn:active{
+    transform: scale(1.01);
+}
+.heart{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  
+}
+.heart h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+.heartIcon{
+    border: none;
+    cursor: pointer;
+    background: none;
+    transition: transform 0.1s;
+}
+.heartIcon:active{
+    transform:scale(1.09);
+
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.carouselBtn{
+    text-align: center;
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 25px grey;
+}
+.carouselBtn:hover{
+    transform: scale(1.05);
+}
+.carouselBtn:active{
+    transform: scale(1.01);
+}
+#item{
+    scroll-snap-align: center;
+}
+.itemList{
+    max-width: 950px;
+    width: 12rem;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+.itemList::-webkit-scrollbar{
+    display: none;
+}
+.itemList{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
